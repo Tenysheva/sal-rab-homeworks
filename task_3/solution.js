@@ -14,16 +14,16 @@ function renderCartItem(item) {
     // количество × цена ₽ = стоимость ₽
     // например,
     // 5 × 500.00 ₽ = 2500 ₽
-    let itemCountText = " ";
-    itemCountText = itemCountText + product.count;
-    itemCountText = itemCountText + ` × `;
-    itemCountText = itemCountText + product.price;
-    itemCountText = itemCountText + ` ₽ = `;
-    let sum = product.count × product.price;
-    itemCountText = itemCountText + sum;
-    itemCountText = itemCountText + ` ₽ `;
+let itemCountText = " ";
+itemCountText = itemCountText + product.count;
+itemCountText = itemCountText + ` × `;
+itemCountText = itemCountText + product.price;
+itemCountText = itemCountText + ` ₽ = `;
+let sum = product.count * product.price;
+itemCountText = itemCountText + sum;
+itemCountText = itemCountText + ` ₽ `;
 
     // Конец решения задания №3.1.
 
-    return `<div class="cart-item"><div>${product.title}</div><div>${itemCountText}</div></div>`;
+ return `<div class="cart-item"><div>${product.title}</div><div>${itemCountText}</div></div>`;
 }
